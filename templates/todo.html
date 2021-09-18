@@ -1,0 +1,12 @@
+{% extends 'bootstrap/base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+{% include 'header.html'%}
+<div class="overlay">
+    <div class="container">
+        {{wtf.quick_form(form, novalidate=True, button_map={"submit":"primary"})}}
+    </div>
+</div>
+{% include 'footer.html' %}
+{% endblock %}

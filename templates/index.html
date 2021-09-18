@@ -1,0 +1,69 @@
+{% include "header.html" %}
+
+<header class="head" style="background-color:#F3F1F5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="text-head">
+                    Create your own To-Do-List
+                </h1>
+                <a href="{{url_for('create_task')}}" class="btn btn btn-info btn btn-outline-success btn-lg">
+                    CREATE TO DO LIST
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <img class="todo-image" src="{{url_for('static', filename='images/todo-list.png')}}">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid" style="background-color:#6D8299">
+    <div class="row">
+        <div class="col-lg-4">
+           <h3 class="section-2">Easy to use.</h3>
+            <p class="ltl-desc">So Easy to use, no need to install anything else.</p>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="section-2">Flexible.</h3>
+            <p class="ltl-desc">You could browser your list from anywhere.</p>
+        </div>
+        <div class="col-lg-4">
+            <h3 class="section-2">Guaranteed Working</h3>
+            <p class="ltl-desc">Never forget to remind you about your task.</p>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" style="background-color:#F7F6F2;">
+    <div class="row">
+        <div class="col">
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h2 class="carousel-text">I no longer have to worried about my to-do list, because activity always remind me.</h2>
+<!--                  <img class="testimonial-images" src="images/dog-img.jpg" alt="dog-profile">-->
+<!--                  <em>Pebbles, New York</em>-->
+                </div>
+                <div class="carousel-item">
+                  <h2 class="carousel-text">Activity help me a lot, to remember my shopping list</h2>
+<!--                  <img class="testimonial-images" src="images/lady-img.jpg" alt="lady-profile">-->
+<!--                  <em>Beverly, Illinois</em>-->
+                </div>
+              </div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+              </div>
+        </div>
+    </div>
+
+</div>
+{% include "footer.html" %}

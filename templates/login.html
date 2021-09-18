@@ -1,0 +1,29 @@
+{% extends 'bootstrap/base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+
+{% block content %}
+{% include 'header.html' %}
+
+<div class="card" style="width: 48rem;">
+  <img src="{{url_for('static', filename='images/welcome.png')}}" class="card-img-top" alt="https://www.pikpng.com/pngvi/JoJbRm_welcome-png-photos-welcome-sign-no-background-clipart/">
+  <div class="card-body">
+    <p class="card-text">{{wtf.quick_form(form, novalidate=True, button_map={"submit":"primary"})}}</p>
+  </div>
+</div>
+<!--<div class="overlay">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <h1>Log In</h1>-->
+<!--            <span>Welcome Back!</span>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!--        {{wtf.quick_form(form, novalidate=True, button_map={"submit":"primary"})}}-->
+<!--    </div>-->
+<!--</div>-->
+
+{% include 'footer.html'%}
+{% endblock %}
